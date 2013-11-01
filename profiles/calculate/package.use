@@ -1,0 +1,99 @@
+#
+app-admin/testdisk ntfs reiserfs
+dev-vcs/git -gtk
+sys-fs/ntfs3g ntfsprogs
+
+#fot 3.20
+net-print/cnijfilter ip4700 mp250 mp270 mp490 mp550 mp560 mp64
+#for 3.50
+net-print/cnijfilter net mx360 mx410 mx420 mx880 nocupsdetection
+
+media-gfx/splashutils fbcondecor
+net-fs/samba quota
+sys-fs/aufs2 inotify kernel-patch
+sys-kernel/calculate-sources symlink vmlinuz minimal
+sys-kernel/dracut device-mapper net
+
+#fix update xorg
+sys-fs/udev extras
+
+sys-fs/squashfs-tools gzip lzma
+
+#disable Xorg dependence
+media-fonts/terminus-font -pcf -X
+
+#for accemble splashutils
+media-libs/jpeg static-libs
+
+#for calculate-server
+net-ftp/proftpd ident
+
+#needed for media-gfx/splashutils-1.5.4.3-r3
+media-libs/lcms static-libs
+
+#need for sys-fs/udisks-1.0.1-r1
+sys-block/parted device-mapper
+
+#need for media-gfx/splashutils-1.5.4.3-r3
+#USE=apng for firefox 7
+media-libs/libpng static-libs apng
+
+#need for media-gfx/splashutils-1.5.4.3-r3
+virtual/jpeg static-libs
+
+#required by media-gfx/splashutils-1.5.4.3-r3[truetype]
+media-libs/freetype static-libs
+
+#required by media-gfx/splashutils-1.5.4.3-r3[mng]
+media-libs/libmng static-libs
+
+#required by media-gfx/splashutils-1.5.4.4[truetype]
+app-arch/bzip2 static-libs
+
+#fix fails to compile (bug 36657 http://bugs.gentoo.org/show_bug.cgi?id=366557)
+media-gfx/sane-backends -v4l
+
+# grub multislot by default
+~sys-boot/grub-2.00 multislot truetype device-mapper
+
+# to solve the problem conflicts with app-dicts/aspell-pt-0.50.2-r1
+app-text/aspell -linguas_pt
+
+# to be able to run independently of glibc
+sys-apps/busybox static
+
+#resolve
+dev-lang/php gd xml
+#
+#Suppoft UTF8 (IssueID 295)
+net-ftp/pure-ftpd charconv
+
+#required by sys-apps/calculate-lib-2.2.26
+sys-apps/file python
+
+#required by virtual/jpeg-0
+media-libs/libjpeg-turbo static-libs
+
+#required by sys-apps/calculate-console-gui-3.0.0_alpha1
+dev-python/pyside script
+
+#required by media-gfx/splashutils-1.5.4.4[truetype]
+sys-libs/zlib static-libs
+
+#required by sys-power/upower-0.9.16
+sys-fs/udev gudev
+
+#required by sys-fs/udisks-1.0.4-r1
+sys-fs/udev hwdb
+
+# add support xft and 256 color
+x11-terms/rxvt-unicode 256-color xft
+
+#for support pastebin.calculate-linux.org
+app-text/wgetpaste -lodgeit-default
+
+# required by net-fs/samba-3.6.16
+sys-libs/talloc python
+
+# net-fs/samba-3.6.19[client]
+net-fs/cifs-utils -acl

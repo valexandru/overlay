@@ -1,0 +1,64 @@
+# Artwork
+#USE="${USE} xscreensaver"
+
+# Audio
+USE="${USE} alsa amr -arts audiofile cue id3tag flac mad mikmod mp3 mpeg nas ogg oggvorbis openal opencore-amr portaudio wavpack vorbis"
+
+# CD and DVD
+USE="${USE} cdparanoia cdr css dvd dvdr dvdread vcd"
+
+# Devices
+USE="${USE} ios ipod udev"
+
+# Documentation format
+USE="${USE} chm djvu ebook"
+
+# Guard and security
+USE="${USE} clamav crypt ssl"
+
+# Hardware
+USE="${USE} 3dnow acpi cairo cpudetection dbus dri ieee1394 lirc mmx mmxext opengl scanner smp sse sse2 sse3 ssse3 sse4.1 sse4.2 sse4a sse5 usb vdpau xcomposite"
+
+#USE="${USE} apm bluetooth"
+
+# Internet Messager
+USE="${USE} irc jabber jingle oscar yahoo"
+
+# Image support
+USE="${USE} X exif fdftk gd gif imagemagick jpeg jpeg2k mng openexr pdf png raw svg tiff wmf wxwindows xpm" 
+
+# Languages support
+#USE="${USE} -java"
+
+# Locale and Fonts
+USE="${USE} spell"
+
+# Mail
+USE="${USE} mbox"
+
+# Print
+USE="${USE} cups"
+
+# Photo
+USE="${USE} gphoto2"
+
+# System
+USE="${USE} consolekit nsplugin policykit"
+
+# Video
+USE="${USE} a52 aac -aalib avi cddb dv encode faac fbcon ffmpeg flash ggi libcaca lzo matroska mplayer musepack real sdl speex srt -svga tga quicktime theora vaapi v4l v4l2 vidix win32codecs xanim x264  xinerama xv xvid xvmc"
+
+# Web
+#USE="${USE} -apache apache2 javascript"
+USE="${USE} libwww vhosts"
+
+# Wireless
+USE="${USE} bluetooth wimax"
+
+# Window manager and speciality
+USE="${USE} gtk libnotify qt3support"
+
+LIRC_DEVICES="devinput"
+
+VIDEO_CARDS="${VIDEO_CARDS} nouveau nvidia i915 i965 r100 r200 r300 r600"
+
