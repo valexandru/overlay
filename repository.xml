@@ -1,0 +1,17 @@
+<repositories xmlns="" version="1.0">
+<repo quality="experimental" status="unofficial">
+<name>overlay</name>
+<description>A simple overlay forked from the one used by Calculate Linux</description>
+<homepage>https://github.com/valexandru/</homepage>
+<owner type="project">
+<email>valex@valexandru.biz</email>
+<name>Vochescu Alexandru</name>
+</owner>
+<source type="git">git://github.com/valexandru/overlay.git</source>
+<source type="git">
+https://valexandru@github.com/valexandru/overlay.git
+</source>
+<feed>
+</feed>
+</repo>
+</repositories>
