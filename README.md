@@ -20,4 +20,4 @@ If the application is not installed, use the command:
 
 To install this overlay in Gentoo or a derivative distribution, use the command:
 
-    layman -f -a overlay -o https://raw.github.com/Gentoo-Land/gentoo-land/master/overlay.xml
+    layman -f -a overlay -o https://raw.github.com/valexandru/overlay/master/overlay.xml
